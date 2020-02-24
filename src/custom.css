@@ -1,0 +1,40 @@
+:root {
+    --splash-height: 100vh;
+    --splash-text-size: 50px;
+    --splash-nav-icon-size: 100px;
+    --splash-row-size: calc(
+        var(--splash-height)
+        - var(--splash-nav-icon-size)
+    );
+    --splash-content-size: calc(
+        var(--splash-row-size)
+        - (2 * 16px)
+    )
+}
+.cust-full-page-screen-height {
+    height: var(--splash-height)
+}
+.cust-splash-row-size {
+    height: var(--splash-row-size)
+}
+.cust-splash-content-size {
+    max-height: var(--splash-content-size);
+}
+.cust-splash-text-size {
+    font-size: var(--splash-text-size);
+}
+.cust-splash-nav-icon-size {
+    font-size: var(--splash-nav-icon-size);
+}
+.cust-bottom-alignment {
+    right: 0;
+    bottom: 0;
+}
+/* .cust-top-display-corner {
+    top: 25vh;
+    left: 25vw;
+}
+.cust-bottom-display-corner {
+    bottom: 25vh;
+    right: 25vw;
+} */
